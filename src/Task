@@ -1,0 +1,12 @@
+
+ Task #1
+ Create a method which will have as a parameter an array of strings.
+ Return a Map<String, Boolean> where each different string is a key and
+ its value is true if that string appears 2 or more times in the array.
+
+ Example:
+ ["a", "b", "a", "c", "b"]
+ Result:
+ {"a": true, "b": true, "c": false}
+
+ Task #2
