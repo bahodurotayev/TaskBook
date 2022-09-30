@@ -6,6 +6,7 @@ public class Task4 {
 
         int[] arr = {1, 2, 3, 4, 5, 6, 7};
 
+
         int[] rotate = rotate1(arr, 3);
         System.out.println("Way 1 :" + Arrays.toString(rotate));
 
