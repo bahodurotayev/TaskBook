@@ -50,3 +50,21 @@ Task #5
             Given two strings s and t, determine if they are isomorphic.
             Two strings are isomorphic if the characters in s can be replaced to get t.
             For example,"egg" and "add" are isomorphic, "foo" and "bar" are not.
+
+Task#6
+                    Create a method which will take a String as a parameter and return type is char.
+                    This method should return a character which is mostly repeated.
+
+                    Example:
+                    String = "aaaabbacccccdddccaaaddddaac"
+                    Output should be c.
+
+Task#7
+                    Create a method which will take a String as a parameter and return type is char.
+                    This method should return a character which is mostly repeated.
+
+                    Example:
+                    String = "aaaabbacccccdddccaaaddddaac"
+                    Output should be c.
+
+                    Explanation: c continuously / without breaking is repeated 5 times. more then a, b, or d.
