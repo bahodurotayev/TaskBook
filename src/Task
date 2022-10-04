@@ -70,6 +70,7 @@ Task#7
          Explanation: c continuously / without breaking is repeated 5 times. more then a, b, or d.
 
           note: This is a most recent interview question!!!
+
 Task #8
         Given an array of Strings.
         Create a method, that will sort this array of Strings in ascending order.
