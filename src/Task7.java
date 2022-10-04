@@ -27,13 +27,15 @@ public class Task7 {
                     break;
                 }
             }
+            //System.out.println(temp + " " + count);
         }
         return finalChar;
     }
     public static void main(String[] args) {
 
-        String str = "aaaaaaaaaeeeeeeeeeeeeebbaaeaacccccccccccccccccc";
+        String str = "aaaabbacccccdddccaaaddddaac";
         Character integer = longestConsecutiveChar(str);
+
         System.out.println(integer);
 
     }
