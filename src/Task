@@ -75,3 +75,8 @@ Task #8
         Given an array of Strings.
         Create a method, that will sort this array of Strings in ascending order.
 
+Task#9
+        Rotate array in Java
+        Rotate an array of n elements to the right by k steps. For example, with
+        n = 7 and k = 3, the array [1,2,3,4,7,5,6] is rotated to [7,6,5,1,2,3,4]
+
