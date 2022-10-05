@@ -26,13 +26,23 @@ public class Task8 {
 
     static String[] sortStringArray (String[] strArr){
 
-
-
+        for (int i = 0; i < strArr.length; i++) {
+            for (int j = i + 1; j < strArr.length; j++) {
+                if(strArr[i].charAt(0) > strArr[j].charAt(0)){
+                    String temp = strArr[i];
+                    strArr[i] = strArr[j];
+                    strArr[j] = temp;
+                }
+            }
+            strArr[i] = ascendingString(strArr[i]);
+        }
         return strArr;
     }
 
     public static void main(String[] args) {
 
-
+        String[] str = {"Ibrahim", "bayram", "zubeyir", "Mehmet", "dave", "Shanon", "elif"};
+        sortStringArray(str);
+        System.out.println(Arrays.toString(str));
     }
 }
