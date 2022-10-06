@@ -1,5 +1,5 @@
 public class Task10 {
-    /*Task 3
+    /*Task 10
         Create a method which will take a String as a parameter and return type is char.
         This method should return a character which is mostly consecutively repeated.
 

@@ -22,6 +22,7 @@ public class Task9 {
     static int[] rotateArray2 (int[] arr, int k){
 
         int[] newArr = new int[arr.length];
+
         for (int i = 0; i < k ; i++) {
           newArr[i] = arr[arr.length - i-1];
         }

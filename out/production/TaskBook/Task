@@ -80,3 +80,18 @@ Task#9
         Rotate an array of n elements to the right by k steps. For example, with
         n = 7 and k = 3, the array [1,2,3,4,7,5,6] is rotated to [7,6,5,1,2,3,4]
 
+Task#10
+        Create a method which will take a String as a parameter and return type is char.
+        This method should return a character which is mostly consecutively repeated.
+
+        Example:
+        String = "aaaabbacccccdddccaaaddddaac"
+        Output should be c.
+
+        Explanation: c continuously / without breaking is repeated 5 times. more then a, b, or d.
+
+Task#11
+        Given an integer array nums, return true if any value appears at least twice in the array,
+         and return false if every element is distinct
+
+
