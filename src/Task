@@ -105,4 +105,10 @@ Task#12
         Input: numbers = [2,3,4], target = 6
         Output: [1,3]
 
+Task#13
+        Sorting array using Loop in ascending order
+
+Task#14
+        Sorting array using Loop in descending order
+
 
