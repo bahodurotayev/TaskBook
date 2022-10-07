@@ -17,7 +17,7 @@ public class Task12 {
     }
     static int[] sortedArr2 (int[] arr){
 
-        for (int i = 0; i < arr.length-1; i++) {
+        for (int i = 0; i < arr.length; i++) {
             for (int j = i; j <arr.length ; j++) {
                 if(arr[i] > arr[j]){
                     int temp = arr[i];
@@ -32,7 +32,7 @@ public class Task12 {
     static int[] sumOfTwo(int[]arr, int target){
         int a =0;
         int b = arr.length-1;
-        while (a <= b){
+        while (a < b){
             int sum = arr[a] + arr[b];
             if(sum > target){
                 b -= 1;
@@ -47,6 +47,23 @@ public class Task12 {
         return  new int[]{a + 1, b + 1};
     }
 
+    static int[] sumOfTwo2(int[]arr, int target){
+       int[] newArr = new int[2];
+                // 2 7
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if(arr[i] + arr[j] == target){
+                    newArr[0] = i;
+                    newArr[1] = j;
+                }
+                else {
+                    break;
+                }
+            }
+        }
+
+       return newArr;
+    }
 
     public static void main(String[] args) {
         int [] arr = {2, 11, 7, 15};
