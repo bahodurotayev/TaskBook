@@ -67,9 +67,14 @@ public class Task12 {
 
     public static void main(String[] args) {
         int [] arr = {2, 11, 7, 15};
-        sortedArr(arr);
-        int[] ints = sumOfTwo(arr, 9);
+
+        int [] arr2 = {2, 11, 7, 15, 5, 6, 8, 3, 0, 9};
+        int[] ints = sortedArr2(arr2);
         System.out.println(Arrays.toString(ints));
 
+        /*
+        int[] ints = sumOfTwo(arr, 9);
+        System.out.println(Arrays.toString(ints));
+*/
     }
 }
