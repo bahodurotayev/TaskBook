@@ -8,7 +8,7 @@ public class Task13 {
                 int temp = arr[i];
                 arr[i] = arr[i + 1];
                 arr[i + 1] = temp;
-                i = 0;
+                i = -1;
             }
         }
        return arr;
@@ -30,7 +30,7 @@ public class Task13 {
     
     public static void main(String[] args) {
         int[] arr = {1, 3, 6, 5, 7, 10, 11, 45};
-        ascendingOrder2(arr);
+        ascendingOrder(arr);
         System.out.println(Arrays.toString(arr));
 
     }
