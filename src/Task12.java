@@ -30,9 +30,11 @@ public class Task12 {
     }
 
     static int[] sumOfTwo(int[]arr, int target){
+
+        int[] arrNew= new int[2];
         int a =0;
         int b = arr.length-1;
-        while (a < b){
+        while (a <= b){
             int sum = arr[a] + arr[b];
             if(sum > target){
                 b -= 1;
@@ -40,11 +42,13 @@ public class Task12 {
                 a += 1;
             }
             else {
-                return new int[]{a + 1, b + 1};
+               arrNew[0] = a + 1;
+               arrNew[1] = b + 1;
+               break;
             }
 
         }
-        return  new int[]{a + 1, b + 1};
+        return  arrNew;
     }
 
     static int[] sumOfTwo2(int[]arr, int target){
@@ -66,15 +70,13 @@ public class Task12 {
     }
 
     public static void main(String[] args) {
-        int [] arr = {2, 11, 7, 15};
+        int [] arr = {2, 3, 7, 13, 7, 23, 3};
 
-        int [] arr2 = {2, 11, 7, 15, 5, 6, 8, 3, 0, 9};
+        /*int [] arr2 = {2, 11, 7, 15, 5, 6, 8, 3, 0, 9};
         int[] ints = sortedArr2(arr2);
-        System.out.println(Arrays.toString(ints));
+        System.out.println(Arrays.toString(ints));*/
 
-        /*
-        int[] ints = sumOfTwo(arr, 9);
+        int[] ints = sumOfTwo(arr, 14);
         System.out.println(Arrays.toString(ints));
-*/
     }
 }
