@@ -114,4 +114,16 @@ Task#14
 Task#15
         Reverse the array using Loop
 
+Task#17
+         Example:
+               Input: Java is Fun
+               Output: Fun is Java
+
+Task#18
+        Create a method which will return boolean
+               If provided String is palindrome, return true. Else, return false.
+
+        Example:
+               Input: 123321
+               Output: true
 
