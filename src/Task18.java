@@ -1,27 +1,60 @@
 public class Task18 {
+    static Boolean isPalindrome4(int x){ // way 4 for integers
+
+        if(x < 0 || (x % 10 == 0 && x != 0)){
+            return false;
+        }
+        int r = 0;
+        while (x > r){
+            r = r * 10 + x / 10;
+            x = x / 10;
+        }
+        return r == x || r / 10 == x;
+    }
     public static void main(String[] args) {
 
-        String str = "143321";
-        char[] arrChar = str.toCharArray();
+        String str = "123321";
+        int num = 123321;
+        Boolean palindrome = isPalindrome3(str);
+        System.out.println(palindrome);
+    }
 
-        boolean isPalindrome = false;
+    static Boolean isPalindrome(String str){
 
-        for (int i = 0; i <arrChar.length ; i++) {
-            for (int j = arrChar.length - 1 - i; j >= 0; j--) {
-
-                if(arrChar[i] == arrChar[j]){
-                        isPalindrome = true;
-
-                }else {
-                    isPalindrome = false;
-                    i = arrChar.length;
-                    break;
+        for (int i = 0; i < str.length(); i++) {
+            for (int j = str.length() - 1 - i; j >= 0 ; j--) {
+                if(str.charAt(i) == str.charAt(j)){
+                    return true;
+                }else{
+                    i = str.length();
                 }
                 break;
             }
         }
+        return false;
+    }
+    static Boolean isPalindrome2(String str){
+        String newStr = "";
+        for (int i = str.length()-1; i >=0 ; i--) {
+            newStr +=str.charAt(i);
+        }
+        if(str.equals(newStr)){
+            return true;
+        }
+     return false;
+    }
+    static Boolean isPalindrome3(String str){
 
-        System.out.println(isPalindrome);
+        int start = 0;
+        int end = str.length()-1;
 
+        while (start < end){
+            if(str.charAt(start) != str.charAt(end)){
+                return false;
+            }
+            start++;
+            end--;
+        }
+        return true;
     }
 }
