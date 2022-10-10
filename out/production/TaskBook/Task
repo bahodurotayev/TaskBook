@@ -135,3 +135,10 @@ Task#19
                Input: 123321
                Output: true
 
+Task#20
+        Example:
+        Input: Java is Fun 2005
+        Output:  4 + 2 + 3 + 4 = 13
+
+Task#21
+        Given an integer, write a function to determine if it a power of 2.
