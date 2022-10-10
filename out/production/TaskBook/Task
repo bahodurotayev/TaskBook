@@ -127,3 +127,11 @@ Task#18
                Input: 123321
                Output: true
 
+Task#19
+        Create a method which will return boolean
+               If provided Integer is palindrome, return true. Else, return false.
+
+        Example:
+               Input: 123321
+               Output: true
+

@@ -6,16 +6,16 @@ public class Task18 {
         }
         int r = 0;
         while (x > r){
-            r = r * 10 + x / 10;
+            r = r * 10 + x % 10;
             x = x / 10;
         }
         return r == x || r / 10 == x;
     }
     public static void main(String[] args) {
 
-        String str = "123321";
+        String str = "";
         int num = 123321;
-        Boolean palindrome = isPalindrome3(str);
+        Boolean palindrome = isPalindrome(str);
         System.out.println(palindrome);
     }
 
@@ -24,14 +24,13 @@ public class Task18 {
         for (int i = 0; i < str.length(); i++) {
             for (int j = str.length() - 1 - i; j >= 0 ; j--) {
                 if(str.charAt(i) == str.charAt(j)){
-                    return true;
+                    break;
                 }else{
-                    i = str.length();
+                    return false;
                 }
-                break;
             }
         }
-        return false;
+        return true;
     }
     static Boolean isPalindrome2(String str){
         String newStr = "";
