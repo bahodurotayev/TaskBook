@@ -13,7 +13,7 @@ public class Task18 {
     }
     public static void main(String[] args) {
 
-        String str = "";
+        String str = "1211133321";
         int num = 123321;
         Boolean palindrome = isPalindrome(str);
         System.out.println(palindrome);
