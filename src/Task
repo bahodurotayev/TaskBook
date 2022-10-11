@@ -142,3 +142,19 @@ Task#20
 
 Task#21
         Given an integer, write a function to determine if it a power of 2.
+
+Task#22
+-
+-
+-
+-
+
+Task#23
+        -   create class Numbers
+            -- create method named as "checkEvenNumber",which returns true if provided integer is even
+            -- create a method "evenNumbers" which will return all even number between 0 and 20
+
+        -   create class TestNumbers
+            -- create method to check "checkEvenNumber" method
+            -- create a method to check if "evenNumbers" method works as expected
+            -- add another three methods, to validate any other possible scenarios
