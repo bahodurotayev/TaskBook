@@ -32,6 +32,4 @@ public class Task19 {
         }
         return true;
     }
-
-
 }
