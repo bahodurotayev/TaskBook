@@ -158,3 +158,9 @@ Task#23
             -- create method to check "checkEvenNumber" method
             -- create a method to check if "evenNumbers" method works as expected
             -- add another three methods, to validate any other possible scenarios
+
+Task#24
+         Given two arrays of ints, array1 and array2.
+                 Print true if they have the same first element, or they have the same last element.
+                 Otherwise, print false
+                 Both arrays will be length 1 or more.
