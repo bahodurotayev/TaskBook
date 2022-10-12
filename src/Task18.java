@@ -13,9 +13,8 @@ public class Task18 {
     }
     public static void main(String[] args) {
 
-        String str = "1211133321";
-        int num = 123321;
-        Boolean palindrome = isPalindrome(str);
+        String str = "123321";
+        Boolean palindrome = isPalindrome2(str);
         System.out.println(palindrome);
     }
 

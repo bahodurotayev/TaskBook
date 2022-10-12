@@ -164,3 +164,20 @@ Task#24
                  Print true if they have the same first element, or they have the same last element.
                  Otherwise, print false
                  Both arrays will be length 1 or more.
+
+            [1, 2, 3], [7, 3] → true
+            [1, 2, 3], [7, 3, 2] → false
+            [1, 2, 3], [1, 3] → true
+            [1, 2, 3], [1, 7, 5, 2] → true
+
+Task#25
+        Given non-empty array of Integers, every element is repeating except one number, return that number ;
+
+Task#26
+        Given non-empty array of Integers, every element is repeating except one number, return that number ;
+
+Task#27
+        Write a program, that outputs the string represent numbers from 1 to N
+        For multiples of 3 should print "Fizz"
+        For multiples of 5 should print "Buzz"
+        For multiples of 3 and 5 should print "FizzBuzz";
