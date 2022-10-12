@@ -196,3 +196,7 @@ Task#28
         Output: 0
         Explanation: In this case, no transactions are done and the max profit = 0.
 
+Task#29
+
+        Using Random class, create a random number up to 100.
+        return count of numbers divisible by 8
