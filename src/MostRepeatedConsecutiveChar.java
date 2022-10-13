@@ -8,8 +8,6 @@ public class MostRepeatedConsecutiveChar {
 
          Explanation: c continuously / without breaking is repeated 5 times. more then a, b, or d.*/
 static Character mostReapedConsecutiveChar(String str){
-
-
     int maxCount = 0;
     char finalChar = ' ';
     for (int i = 0; i < str.length(); i++) {
@@ -24,7 +22,7 @@ static Character mostReapedConsecutiveChar(String str){
             }else if(str.charAt(i) != str.charAt(j)) {
                     i = j - 1;
                     break;
-                }
+            }
         }
     }
     return finalChar;
