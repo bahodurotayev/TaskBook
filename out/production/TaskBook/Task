@@ -200,3 +200,6 @@ Task#29
 
         Using Random class, create a random number up to 100.
         return count of numbers divisible by 8
+
+Task#30
+        find first non repeating char in a string and return its index else retuen -1

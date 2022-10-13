@@ -39,7 +39,7 @@ public class Task10 {
     }
 
     public static void main(String[] args) {
-        String str = "aaaabbbbbbbbbacccccdddccaaaddddaac";
+        String str = "leetcode";
         char c = longestChar(str);
         System.out.println(c);
     }

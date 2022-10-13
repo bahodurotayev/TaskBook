@@ -1,8 +1,8 @@
 import java.util.HashSet;
 
 public class Task26 {
-  /*  Task#25
-    Given non-empty array of Integers, every element is repeating except one number, return that number ;*/
+
+    // Given array if there is a duplicate return true if not return false
 
     static boolean repeated(int[] arr){
         for (int i = 0; i <arr.length; i++) {

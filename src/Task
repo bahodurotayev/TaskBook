@@ -174,7 +174,7 @@ Task#25
         Given non-empty array of Integers, every element is repeating except one number, return that number ;
 
 Task#26
-        Given non-empty array of Integers, every element is repeating except one number, return that number ;
+        Given array if there is a duplicate return true if not return false
 
 Task#27
         Write a program, that outputs the string represent numbers from 1 to N
@@ -200,3 +200,6 @@ Task#29
 
         Using Random class, create a random number up to 100.
         return count of numbers divisible by 8
+
+Task#30
+        find first non repeating char in a string and return its index else return -1
