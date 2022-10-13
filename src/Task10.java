@@ -14,14 +14,13 @@ public class Task10 {
     static char longestChar(String str){
 
         char newChar = ' ';
-
          int maxCount = 0;
 
         char [] charArr = str.toCharArray();
 
         for (int i = 0; i <charArr.length ; i++) {
             int count = 1;
-            for (int j = i+1; j <charArr.length ; j++) {
+            for (int j = i+1; j <charArr.length; j++) {
                 if (charArr[i] == charArr[j]){
                     count++;
                     if(maxCount < count){
