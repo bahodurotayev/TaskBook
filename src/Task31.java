@@ -31,9 +31,6 @@ public class Task31 {
         return false;
     }
     static Boolean checkIfAnagram(String str1, String str2){
-        if(str1.length() != str2.length()){
-            return false;
-        }
         boolean isAnagram = false;
         for (int i = 0; i < str1.length(); i++) {
             for (int j = 0; j < str2.length(); j++) {
@@ -48,9 +45,9 @@ public class Task31 {
         return isAnagram;
     }
     public static void main(String[] args) {
-        String str = "funeral";
-        String str2 = "realfun";
-        Boolean aBoolean = checkIfAnagram3(str, str2);
+        String str = "mom";
+        String str2 = "mom";
+        Boolean aBoolean = checkIfAnagram(str, str2);
         System.out.println("aBoolean = " + aBoolean);
     }
 }
