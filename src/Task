@@ -200,3 +200,10 @@ Task#29
         return count of numbers divisible by 8
 Task#30
         find first non repeating char in a string and return its index else return -1
+
+Task#31
+        Given two String, determine if they are anagram.
+        s = "anagram";
+        t = "nagaram";
+        return true;
+        if they dont share same char return falsel
