@@ -31,5 +31,5 @@ public class Task28 {
         int i = bestTimeToBuyAndSellStock(prices);
         System.out.println(i);
     }
-}
 
+}
