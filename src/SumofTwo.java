@@ -14,7 +14,7 @@ public class SumofTwo {
 
     public static void main(String[] args) {
         int[] arr = {2, 7, 11, 15};
-        int[] ints = sumOfTwo(arr, 9);
+        int[] ints = sumOfTwo2(arr, 9);
         System.out.println(Arrays.toString(ints));
     }
     public static int[] sumOfTwo2(int[] arr, int target){
@@ -22,11 +22,17 @@ public class SumofTwo {
        int left = 0;
        int right = arr.length - 1;
        while (left < right){
-           int sum = left + right;
-           if(sum < target){
-                left++;
+           int sum = arr[left] + arr[right];
+           if(sum > target){
+                right--;
+           }else if(sum < target){
+               left++;
+           }else {
+               newArr[0] = left;
+               newArr[1] = right;
+               break;
            }
        }
-       return arr;
+       return newArr;
     }
 }
