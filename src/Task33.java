@@ -15,23 +15,23 @@ public class Task33 {
 
     public static void main(String[] args) {
         int[] arr = {1, 4, 3, 7, 6, 5, 9, 12, 9, 7, 1};
-        int thePeakElement = findThePeakElement(arr);
+        int thePeakElement = findThePeakElement2(arr);
         System.out.println("index : " + thePeakElement);
     }
 
     static  int findThePeakElement2(int[] nums) {
-        int n = nums.length;
-        int l =0;
-        int h= nums.length-1;
-        while(h>=l){
-            int mid = (l+h)/2;
-            if((mid==0 || nums[mid-1] <= nums[mid]) && (mid == (n-1) || nums[mid]  >nums[mid+1])){
+        int length = nums.length;
+        int start =0;
+        int end= nums.length-1;
+        while(end >= start){
+            int mid = (start + end)/2;
+            if((mid == 0 || nums[mid-1] <= nums[mid]) && (mid == (length-1) || nums[mid]  > nums[mid+1])){
                 return mid;
             }
-            if(mid>0 && nums[mid] >= nums[mid+1]) {
-                h = mid-1;
+            if(mid > 0 && nums[mid] >= nums[mid+1]) {
+                end = mid-1;
             }
-            else l = mid+1;
+            else start = mid+1;
         }
         return -1;
     }
