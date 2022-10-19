@@ -21,11 +21,16 @@ public class Task33 {
 
     static  int findThePeakElement2(int[] nums) {
         int n = nums.length;
-        int l =0, h= nums.length-1;
+        int l =0;
+        int h= nums.length-1;
         while(h>=l){
             int mid = (l+h)/2;
-            if((mid==0||nums[mid-1]<=nums[mid])&&(mid==(n-1)||nums[mid]>nums[mid+1])) return mid;
-            if(mid>0&&nums[mid]>=nums[mid+1]) h = mid-1;
+            if((mid==0 || nums[mid-1] <= nums[mid]) && (mid == (n-1) || nums[mid]  >nums[mid+1])){
+                return mid;
+            }
+            if(mid>0 && nums[mid] >= nums[mid+1]) {
+                h = mid-1;
+            }
             else l = mid+1;
         }
         return -1;
