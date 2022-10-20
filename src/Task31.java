@@ -3,7 +3,6 @@ import java.util.Arrays;
 public class Task31 {
 
     static Boolean checkIfAnagram3(String str1, String str2){
-        if(str1.length()!=str2.length()) return false;
         int[] ar1=new int[26];
         int[] ar2=new int[26];
         for(int i=0; i<str1.length(); i++){
@@ -11,7 +10,9 @@ public class Task31 {
             ar2[str2.charAt(i)-'a']++;
         }
         for(int i=0; i<26; i++){
-            if(ar1[i]!=ar2[i]) return false;
+            if(ar1[i]!=ar2[i]) {
+                return false;
+            }
         }
         return true;
     }
@@ -24,13 +25,13 @@ public class Task31 {
         Arrays.sort(ch1);
         Arrays.sort(ch2);
         for (int i = 0; i < ch2.length; i++) {
-            if(ch1[i] == ch2[i]){
-                return true;
+            if(ch1[i] != ch2[i]){
+                return false;
             }
         }
-        return false;
+        return true;
     }
-    static Boolean checkIfAnagram(String str1, String str2){
+  /*  static Boolean checkIfAnagram(String str1, String str2){
         boolean isAnagram = false;
         for (int i = 0; i < str1.length(); i++) {
             for (int j = 0; j < str2.length(); j++) {
@@ -43,11 +44,11 @@ public class Task31 {
             }
         }
         return isAnagram;
-    }
+    }*/
     public static void main(String[] args) {
-        String str = "mom";
-        String str2 = "mom";
-        Boolean aBoolean = checkIfAnagram(str, str2);
+        String str = "anagram";
+        String str2 = "nagaram";
+        Boolean aBoolean = checkIfAnagram2(str, str2);
         System.out.println("aBoolean = " + aBoolean);
     }
 }
