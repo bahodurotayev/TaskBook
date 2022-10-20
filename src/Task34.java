@@ -1,12 +1,9 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
+import java.util.*;
 
 public class Task34 {
     public static void main(String[] args) {
 
-        boolean b = backspaceCompare("ac#d", "bd#d");
+        boolean b = backspaceCompare3("#d#", "");
         System.out.println(b);
 
     }
@@ -76,5 +73,27 @@ public class Task34 {
         }
 
         return true;
+    }
+    public static boolean backspaceCompare3(String s, String t) {
+        Stack<Character> ss = new Stack<>();
+        for (int i = 0; i < s.length(); i++) {
+            if(s.charAt(i) != '#'){
+                ss.push(s.charAt(i));
+            }else if(!ss.isEmpty()) {
+                ss.pop();
+            }
+        }
+        Stack<Character> tt = new Stack<>();
+        for (int i = 0; i < t.length(); i++) {
+            if(t.charAt(i) != '#'){
+                tt.push(s.charAt(i));
+            }else if(!tt.isEmpty()){
+                tt.pop();
+            }
+        }
+        if(ss.equals(tt)){
+            return true;
+        }
+        return false;
     }
 }
