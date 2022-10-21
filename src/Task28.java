@@ -6,7 +6,7 @@ public class Task28 {
         for (int i = 0; i < prices.length; i++) {
             if(prices[i] < min){
                 min = prices[i];
-                profit = 0;
+               // profit = 0;
             } else if(prices[i] - min > profit) {
                 profit = prices[i] - min;
             }
@@ -32,8 +32,8 @@ public class Task28 {
     }
     public static void main(String[] args) {
 
-       int[] prices = {7,6,4,3,1}; // 7,4,5,3,6,1    7,1,5,3,6,4  7,6,4,3,1  1,7,4,3,1
-        int i = bestTimeToBuyAndSellStock2(prices);
+       int[] prices = {7,4,5,3,6,1}; // 7,4,5,3,6,1    7,1,5,3,6,4  7,6,4,3,1  1,7,4,3,1
+        int i = bestTimeToBuyAndSellStock(prices);
         System.out.println(i);
     }
 
