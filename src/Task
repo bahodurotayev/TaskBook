@@ -251,4 +251,11 @@ Task#37
         Find kth largest element in unsorted array
 
 Task#38
-       ---------------------------------------------
+       Write a Java program to check whether a given number is an ugly number.
+       In number system, ugly numbers are positive numbers whose only prime factors are 2, 3 or 5. First 10 ugly numbers are 1, 2, 3, 4, 5, 6, 8, 9, 10, 12.
+       By convention, 1 is included.
+
+       Test Data: Input an integer number: 235
+
+Task#39
+      --------------
