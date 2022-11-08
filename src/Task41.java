@@ -13,4 +13,10 @@ public class Task41 {
         }
         return max;
     }
+
+    public static void main(String[] args) {
+        int[] arr ={1, 1, 1, 0, 1, 1};
+        int i = longestConsecutiveOnes(arr);
+        System.out.println(i);
+    }
 }
