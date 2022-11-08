@@ -1,6 +1,6 @@
 public class Task38 {
     public static void main(String[] args) {
-        boolean uglyNumber = isUglyNumber(18);
+        boolean uglyNumber = isUglyNumber(17);
         System.out.println(uglyNumber);
     }
     static boolean isUglyNumber(int number){

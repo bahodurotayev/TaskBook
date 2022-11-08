@@ -1,3 +1,5 @@
+package LeetCode;
+
 public class PeakNumber {
     public static void main(String[] args) {
         int[] arr = {1, 4, 3, 7, 6, 5, 9, 12, 9, 7, 1};

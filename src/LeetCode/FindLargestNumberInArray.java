@@ -1,3 +1,5 @@
+package LeetCode;
+
 public class FindLargestNumberInArray {
     static int findLargestNumberInArray(int[] arr){
         int max = Integer.MIN_VALUE;

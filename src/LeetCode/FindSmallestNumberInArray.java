@@ -1,3 +1,5 @@
+package LeetCode;
+
 public class FindSmallestNumberInArray {
     static int findSmallestNumberArray(int[] arr){
         int min = Integer.MAX_VALUE;
