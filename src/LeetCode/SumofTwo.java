@@ -16,7 +16,7 @@ public class SumofTwo {
 
     public static void main(String[] args) {
         int[] arr = {2, 7, 11, 15};
-        int[] ints = sumOfTwo2(arr, 9);
+        int[] ints = sumOfTwo2(arr, 17);
         System.out.println(Arrays.toString(ints));
     }
     public static int[] sumOfTwo2(int[] arr, int target){
