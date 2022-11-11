@@ -47,5 +47,6 @@ public class prac {
         }while (num > 0);
 
         return list;
+
     }
 }
