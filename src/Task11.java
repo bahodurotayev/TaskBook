@@ -40,8 +40,8 @@ public class Task11 {
     }
 
     public static void main(String[] args) {
-        int[]arr = {1, 2, 5, 9, 7, 6};
-        Boolean repeated = repeated3(arr);
+        int[]arr = {7, 2, 5, 9, 1, 8};
+        Boolean repeated = repeated(arr);
         System.out.println(repeated);
     }
 }
