@@ -34,9 +34,10 @@ public class prac {
         String [] strArr = str.split("");
         System.out.println(Arrays.toString(strArr));*/
 
-        int num = 123;
-        IntStream IntStream = Integer.toString(num).chars().map(c-> c-'0');
-        System.out.println((Arrays.toString(IntStream.toArray())));
+//        int num = 123;
+//        IntStream IntStream = Integer.toString(num).chars().map(c-> c-'0');
+//        System.out.println((Arrays.toString(IntStream.toArray())));
+
     }
     static List<Integer> convertToArray(int num){
         ArrayList<Integer> list = new ArrayList<>();
