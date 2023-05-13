@@ -1,3 +1,5 @@
+package practice;
+
 import java.util.*;
 import java.util.stream.IntStream;
 
@@ -38,6 +40,13 @@ public class prac {
 //        IntStream IntStream = Integer.toString(num).chars().map(c-> c-'0');
 //        System.out.println((Arrays.toString(IntStream.toArray())));
 
+        String s1 = " bahodur";
+        String reverse = "";
+        char[]array = s1.toCharArray();
+        for (int i = array.length - 1; i >=0 ; i--) {
+            reverse += array[i];
+        }
+        System.out.println(reverse);
     }
     static List<Integer> convertToArray(int num){
         ArrayList<Integer> list = new ArrayList<>();
